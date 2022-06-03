@@ -1,0 +1,8 @@
+
+Contract Deployed on Rinkeby: 0xf33e6077816361E9Cb6c111C8862152366FeE77E
+
+Constructor Parameters: Name, Symbol and Whitelist period in days.
+
+Default values are set to 3 Ether for each NFT category as minting price which can be change by owner: who deployed the contract
+
+
