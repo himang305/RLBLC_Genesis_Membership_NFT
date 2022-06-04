@@ -187,8 +187,7 @@ import "@openzeppelin/contracts/utils/math/SafeMath.sol";
     /// @notice Function to withdraw contract balance in owner's address
     function withdraw() external onlyOwner{
         uint balance = address(this).balance;
-        payable(address(0x90F79bf6EB2c4f870365E785982E1f101E93b906)).transfer(balance);
-        // payable(address(0xC051D2013d8eAb456CFB3a9a08d115935a86Ea3A)).transfer(balance);
+        payable(address(0xC051D2013d8eAb456CFB3a9a08d115935a86Ea3A)).transfer(balance);
     }
 
     /// The following functions are overrides required by Solidity.
