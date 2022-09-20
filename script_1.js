@@ -1,3 +1,19 @@
+// image file script
+
+    fs = require('fs')
+    fs.readFile('1.png', function (err, data) {
+        if (err) throw err;
+
+        for(var i=2; i<101; i++){ 
+        fs.writeFile(i+'.png', data, function (err) {
+            if (err) throw err;
+            console.log(i);
+        });
+        }
+    
+    });
+
+
 // metadata file script
 const fs = require('fs');
  
