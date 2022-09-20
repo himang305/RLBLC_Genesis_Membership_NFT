@@ -103,11 +103,16 @@ fs.writeFile( i+".json", jsonContent, 'utf8', function (err) {
 
 // read json files and add key values at last
 
+const fs = require('fs');
+for(var i=1; i<51; i++){ 
+
 let content = JSON.parse(fs.readFileSync(i+'.json', 'utf8'));
 // edit or add property
 content.name = "OG NFT";
-content.image = "ipfs/Qma2CCRoenSQ9BHkC3RpKuQnF9AeyWA3FHLjhETBgxKL5w/"+ i +".png",
+content.image = "ipfs/QmadotpQy7Jjb9CG55ZUWwdxMXkECtz7Fx9NdWyMbKZPCy/"+ i +".jpeg",
 //write file
 contents = JSON.stringify(content,null,10);
 
 fs.writeFileSync(i+'.json', contents);
+
+}
