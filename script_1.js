@@ -97,3 +97,17 @@ fs.writeFile( i+".json", jsonContent, 'utf8', function (err) {
     console.log("JSON file has been saved.");
 });
 }
+
+
+
+
+// read json files and add key values at last
+
+let content = JSON.parse(fs.readFileSync(i+'.json', 'utf8'));
+// edit or add property
+content.name = "OG NFT";
+content.image = "ipfs/Qma2CCRoenSQ9BHkC3RpKuQnF9AeyWA3FHLjhETBgxKL5w/"+ i +".png",
+//write file
+contents = JSON.stringify(content,null,10);
+
+fs.writeFileSync(i+'.json', contents);
